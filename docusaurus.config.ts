@@ -131,7 +131,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: curYear === 2026 ? 'Copyright © 2026  OceanApocalypse' : `Copyright © ${curYear}-2026  OceanApocalypse`,
+      copyright: curYear === 2026 ? 'Copyright © 2026 OceanApocalypse' : `Copyright © ${curYear}-2026 OceanApocalypse`,
     },
     prism: {
       theme: prismThemes.github,
