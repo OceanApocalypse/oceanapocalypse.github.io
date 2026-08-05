@@ -1,0 +1,46 @@
+name: Deploy documentation
+
+on:
+  push:
+    branches:
+      - main
+      - wip
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  
+concurrency:
+  group: docs-${{ github.ref }}
+  cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
+
+jobs:
+  deploy-docs:
+    name: Build and deploy documentation
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24.x
+
+      - name: Install Docusaurus
+        run: npm ci --ignore-scripts
+
+      - name: Build site with Docusaurus
+        run: npm run build
+
+      - name: Publish Docusaurus site
+        if: github.event_name == 'push'
+        uses: peaceiris/actions-gh-pages@84c30a85c19949d7eee79c4ff27748b70285e453
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: build
+          force_orphan: true
