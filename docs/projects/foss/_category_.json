@@ -1,0 +1,8 @@
+{
+    "label": "Our FOSS Projects",
+    "position": 1,
+    "link": {
+        "type": "generated-index",
+        "description": "All of the FOSS projects we maintain!"
+    }
+}

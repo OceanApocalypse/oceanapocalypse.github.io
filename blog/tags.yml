@@ -1,19 +1,14 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+announcement:
+  label: Announcements
+  permalink: /announcements
+  description: General announcements and news.
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
+choice:
+  label: Our Choices
+  permalink: /our-choices
+  description: Information on why we do things the way we do.
 
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
-
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+docs:
+  label: Releases
+  permalink: /releases
+  description: New releases to look out for!!

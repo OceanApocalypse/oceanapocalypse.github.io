@@ -7,8 +7,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 const curYear = new Date().getUTCFullYear();
 const config: Config = {
   title: 'Ocean Apocalypse',
-  tagline: 'Open-source organization! We make libraries, software and games.',
-  favicon: 'img/favicon.ico',
+  tagline: 'Open-source organization! We make libraries, software and games. Site is WIP.',
+  favicon: 'brand/icon/oas_icon_colorful.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -71,14 +71,20 @@ const config: Config = {
       title: 'Ocean Apocalypse',
       logo: {
         alt: 'OAS Logo',
-        src: 'img/logo.svg',
+        src: 'brand/icon/oas_icon_colorful.svg',
       },
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'aboutUsSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'About Us',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'projectsSidebar',
+          position: 'left',
+          label: 'Projects',
         },
         { to: '/blog', label: 'Blog', position: 'left' },
         {
@@ -95,14 +101,15 @@ const config: Config = {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: 'About us',
+              to: '/docs/about/who-are-we',
             },
           ],
         },
         {
           title: 'Community',
           items: [
+            /*
             {
               label: 'Stack Overflow',
               href: 'https://stackoverflow.com/questions/tagged/docusaurus',
@@ -111,9 +118,10 @@ const config: Config = {
               label: 'Discord',
               href: 'https://discordapp.com/invite/docusaurus',
             },
+            */
             {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
+              label: 'Bluesky',
+              href: 'https://bsky.app/profile/oceanapocalypse.bsky.social',
             },
           ],
         },
