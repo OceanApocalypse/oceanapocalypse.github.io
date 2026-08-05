@@ -31,7 +31,7 @@ jobs:
         with:
           node-version: 24.x
 
-      - name: Install Docusaurus
+      - name: Install Docusaurus and other dependencies
         run: npm ci --ignore-scripts
 
       - name: Build site with Docusaurus
