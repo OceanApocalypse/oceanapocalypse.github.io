@@ -6,10 +6,6 @@ on:
       - main
       - wip
   workflow_dispatch:
-
-permissions:
-  contents: write
-  pages: write
   
 concurrency:
   group: docs-${{ github.ref }}
@@ -19,6 +15,10 @@ jobs:
   deploy-docs:
     name: Build and deploy documentation
     runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+      pages: write
 
     steps:
       - name: Checkout repository
