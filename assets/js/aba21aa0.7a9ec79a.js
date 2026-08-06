@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkocean_apocalypse=self.webpackChunkocean_apocalypse||[]).push([["747"],{7093(e){e.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"default"}')}}]);

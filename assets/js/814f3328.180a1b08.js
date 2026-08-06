@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkocean_apocalypse=self.webpackChunkocean_apocalypse||[]).push([["833"],{5513(e){e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Placeholder Article","permalink":"/blog/temporary-placeholder","unlisted":false,"date":"2026-08-05T00:00:00.000Z"}]}')}}]);
