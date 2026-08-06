@@ -1,0 +1,34 @@
+version: 2
+
+updates:
+  - package-ecosystem: "npm"
+    directories:
+      - "/*"
+    exclude-paths:
+      - "/docs/*"
+      - "/blog/*"
+      - "/static/*"
+      - "/build/*"
+      - "/.sonarlint/*"
+      - "/.vscode/*"
+    schedule:
+      interval: "cron"
+      cronjob: "0 7 * * WED"
+      timezone: "Europe/Lisbon"
+    open-pull-requests-limit: 12
+    target-branch: "dev"
+    rebase-strategy: "auto"
+    groups:
+      minor-and-patch:
+        update-types:
+          - "minor"
+          - "patch"
+      major:
+        update-types:
+          - "major"
+    assignees:
+      - "mf366-dev"
+    labels:
+      - "Scope/Dependencies"
+    commit-message:
+      prefix: "chore(deps.nodejs):"
