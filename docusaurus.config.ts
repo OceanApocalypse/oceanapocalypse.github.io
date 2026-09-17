@@ -7,7 +7,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 const curYear = new Date().getUTCFullYear();
 const config: Config = {
   title: 'Ocean Apocalypse',
-  tagline: 'Open-source organization! We make libraries, software and games. Site is WIP.',
+  tagline:
+    "A FLOSS-first organization that makes libraries, software and games. (Site is WIP)",
   favicon: 'brand/icon/oas_icon_colorful.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
