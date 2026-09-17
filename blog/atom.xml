@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="atom.xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://oceanapocalypse.org/blog</id>
+    <title>Ocean Apocalypse Blog</title>
+    <updated>2026-08-05T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://oceanapocalypse.org/blog"/>
+    <subtitle>Ocean Apocalypse Blog</subtitle>
+    <icon>https://oceanapocalypse.org/brand/icon/oas_icon_colorful.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Placeholder Article]]></title>
+        <id>https://oceanapocalypse.org/blog/temporary-placeholder</id>
+        <link href="https://oceanapocalypse.org/blog/temporary-placeholder"/>
+        <updated>2026-08-05T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Placeholder content.]]></summary>
+        <content type="html"><![CDATA[<p>Placeholder content.</p>
+]]></content>
+        <author>
+            <name>Matthew</name>
+            <email>matthew@oceanapocalypse.org</email>
+            <uri>https://mf366-dev</uri>
+        </author>
+        <category label="Announcements" term="Announcements"/>
+    </entry>
+</feed>

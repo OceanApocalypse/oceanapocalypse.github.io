@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkocean_apocalypse=self.webpackChunkocean_apocalypse||[]).push([["186"],{8070(e){e.exports=JSON.parse('{"tags":[{"label":"Announcements","permalink":"/blog/tags/announcements","description":"General announcements and news.","count":1}]}')}}]);

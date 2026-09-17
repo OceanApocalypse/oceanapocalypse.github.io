@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkocean_apocalypse=self.webpackChunkocean_apocalypse||[]).push([["220"],{1912(a){a.exports=JSON.parse('{"blogBasePath":"/blog","blogTitle":"Blog","authorsListPath":"/blog/authors"}')}}]);
